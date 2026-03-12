@@ -1,0 +1,19 @@
+# Ignore everything
+*
+
+# Keep gitignore
+!.gitignore
+
+# Keep specific script
+!ReadDataCircularInclusion.m
+!ReadData3Circles.m
+!ReadData3Circles.m
+!ReadMultipleHighNoise.m
+!ReadDataLargePhantom.m
+# Keep the utils directory (allow everything inside it)
+!utils/
+!utils/**
+
+# Don't ignore HDF5 files
+!*.h5
+!**/*.h5
