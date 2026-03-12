@@ -17,3 +17,4 @@
 # Don't ignore HDF5 files
 !*.h5
 !**/*.h5
+!*.md
