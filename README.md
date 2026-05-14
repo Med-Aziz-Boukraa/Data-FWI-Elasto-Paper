@@ -2,11 +2,15 @@
 
 # Time-Harmonic Elastography Data
 
-This repository contains synthetic datasets of displacement fields in time-harmonic elastography. The dataset is generated for the purpose of a scientific paper using Full Waveform Inversion (currently under review). MATLAB code is provided for reading and visualizing the data.
+This repository contains synthetic datasets of displacement fields in time-harmonic elastography. The dataset accompanies the paper "*Proof of concept for full-waveform inversion in ultrasound time-harmonic shear-wave elastography*" published in *Physics in Medicine & Biology* (DOI: 10.1088/1361-6560/ae6af4). MATLAB code is provided for reading and visualizing the data.
 
 ## Dataset Description and File Structure
 
-The dataset consists of frequency-domain finite element simulations in 2D of shear waves, performed in FreeFEM using the fractional Kelvin–Voigt viscoelastic model. A harmonic source excitation is applied at the right border of the domain at specified frequencies. To simulate ultrasound-based displacement field estimation, depth-dependent noise (both multiplicative and additive) is introduced, resulting in a decreasing signal-to-noise ratio with depth.
+The dataset consists of frequency-domain finite element simulations in 2D of shear waves, performed in FreeFEM using the fractional Kelvin–Voigt viscoelastic model. A harmonic source excitation at specified frequencies is applied at the right border of the domain. The source is centered vertically along this boundary and spans 80% of its length.
+
+To simulate ultrasound-based displacement field estimation, depth-dependent noise (both multiplicative and additive) is introduced, resulting in a decreasing signal-to-noise ratio with depth.
+
+All datasets are generated on an image domain of [-1.9, 1.9] cm x [0.03, 5.0] cm, except `Dataset-LargerPhantom-NoNoise.h5`, which uses [-4, 4] cm x [0, 7] cm.
 
 Three types of inclusion geometries are considered, each represented by specific HDF5 files:
 
@@ -16,6 +20,10 @@ Three types of inclusion geometries are considered, each represented by specific
 
 MATLAB scripts (`ReadDataCircularInclusion.m`, `ReadMultipleHighNoise.m`, etc.) are provided for loading and visualizing the datasets.
 
+### Data Format and Reproducibility Notes
+
+Displacement fields are in meters. The HDF5 files store the full wavefield (displacement magnitude and phase), mesh coordinates in meters, and simulation frequencies. Key simulation parameters, including, material properties (density, shear modulus, and viscoelastic damping), and boundary conditions are provided in the associated paper.
+
 ## Usage
 
 1. **MATLAB**: Use the provided scripts to load and visualize HDF5 datasets.
@@ -24,9 +32,23 @@ MATLAB scripts (`ReadDataCircularInclusion.m`, `ReadMultipleHighNoise.m`, etc.) 
 
 ## Citation
 
-If you use these datasets, please cite:
+If you use these datasets or build upon this work, please cite:
 
-> [DOI: 10.5281/zenodo.18979433](https://doi.org/10.5281/zenodo.18979433)
+> Dataset DOI: [10.5281/zenodo.18979433](https://doi.org/10.5281/zenodo.18979433)
+>
+> Boukraa, M. A., Karabiyik, Y., Austeng, A., Holm, S., & Näsholm, S. P. (2026). Proof of concept for full-waveform inversion in ultrasound time-harmonic shear-wave elastography. *Physics in Medicine & Biology*. https://doi.org/10.1088/1361-6560/ae6af4
+
+BibTeX:
+
+```bibtex
+@article{boukraa2026fwi,
+  author={Boukraa, Mohamed Aziz and Karabiyik, Yucel and Austeng, Andreas and Holm, Sverre and Nasholm, Sven Peter},
+  title={Proof of concept for full-waveform inversion in ultrasound time-harmonic shear-wave elastography},
+  journal={Physics in Medicine & Biology},
+  doi={10.1088/1361-6560/ae6af4},
+  year={2026},
+}
+```
 
 ## License
 
@@ -34,4 +56,7 @@ See LICENSE for terms of use.
 
 ## Contact
 
-For questions or collaboration, please contact the repository maintainer.
+For questions, collaboration, or to report data errors or missing replication information, please contact:
+
+**Mohamed Aziz Boukraa**  
+Email: mohambo@ifi.uio.no

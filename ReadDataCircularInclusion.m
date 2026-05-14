@@ -30,7 +30,7 @@ addpath(genpath("utils/"));
 %% ------------------------- User inputs ----------------------------------
 h5file     = 'Dataset-Circular-Inclusion.h5';   % <-- CHANGE if needed
 noiseLevel = 'MediumNoise';                       % 'LowNoise','MediumNoise','HighNoise'
-frequency  = 120;                               % Hz
+frequency  = 100;                               % Hz
 
 %% ------------------------- Frequency policy -----------------------------
 switch string(noiseLevel)
