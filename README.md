@@ -36,17 +36,26 @@ If you use these datasets or build upon this work, please cite:
 
 > Dataset DOI: [10.5281/zenodo.18979433](https://doi.org/10.5281/zenodo.18979433)
 >
-> Boukraa, M. A., Karabiyik, Y., Austeng, A., Holm, S., & Näsholm, S. P. (2026). Proof of concept for full-waveform inversion in ultrasound time-harmonic shear-wave elastography. *Physics in Medicine & Biology*. https://doi.org/10.1088/1361-6560/ae6af4
+> Boukraa, M.A., Karabiyik, Y., Austeng, A., Holm, S., Näsholm, S.P., 2026. Proof of concept for full-waveform inversion in ultrasound time-harmonic shear-wave elastography. Phys. Med. Biol. 71, 105011. https://doi.org/10.1088/1361-6560/ae6af4
 
 BibTeX:
 
 ```bibtex
-@article{boukraa2026fwi,
-  author={Boukraa, Mohamed Aziz and Karabiyik, Yucel and Austeng, Andreas and Holm, Sverre and Nasholm, Sven Peter},
-  title={Proof of concept for full-waveform inversion in ultrasound time-harmonic shear-wave elastography},
-  journal={Physics in Medicine & Biology},
-  doi={10.1088/1361-6560/ae6af4},
-  year={2026},
+@article{boukraa_proof_2026,
+	title = {Proof of concept for full-waveform inversion in ultrasound time-harmonic shear-wave elastography},
+	volume = {71},
+	issn = {0031-9155},
+	url = {https://doi.org/10.1088/1361-6560/ae6af4},
+	doi = {10.1088/1361-6560/ae6af4},
+	pages = {105011},
+	number = {10},
+	journaltitle = {Physics in Medicine \& Biology},
+	shortjournal = {Phys. Med. Biol.},
+	publisher = {{IOP} Publishing},
+	author = {Boukraa, Mohamed Aziz and Karabiyik, Yücel and Austeng, Andreas and Holm, Sverre and Näsholm, Sven Peter},
+	urldate = {2026-05-26},
+	date = {2026-05},
+	langid = {english},
 }
 ```
 
